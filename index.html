@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Acceso</title>
+  
+
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Formulario de acceso</h1>
+    <form>
+      <input type="text" placeholder="Correo electrónico" />
+      <input type="password" placeholder="Contraseña" />
+      
+      <div class="roles">
+        <div class="role-option">
+          <label><input type="radio" name="role" /> Administrador</label>
+        </div>
+        <div class="role-option">
+          <label><input type="radio" name="role" /> Gerente</label>
+        </div>
+        <div class="role-option">
+          <label><input type="radio" name="role" /> Propietario</label>
+        </div>
+        <div class="role-option">
+          <label><input type="radio" name="role" /> Agente de ventas</label>
+        </div>
+        <div class="role-option">
+          <label><input type="radio" name="role" /> Prospecto</label>
+        </div>
+      </div>
+      
+      <button type="submit">Acceder</button>
+      <div class="forgot-password">
+        <a href="#">¿Olvidó su contraseña?</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

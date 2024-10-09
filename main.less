@@ -1,0 +1,101 @@
+@admin-color: #1e90ff;   /* Azul fuerte para Administrador */
+@gerente-color: #32cd32; /* Verde brillante para Gerente */
+@propietario-color: #ff8c00; /* Naranja oscuro para Propietario */
+@agente-color: #ff1493;  /* Rosa fuerte para Agente de ventas */
+@prospecto-color: #9400d3; /* Violeta oscuro para Prospecto */
+@border-color: #333;
+@text-color: #fff;
+
+.container {
+  width: 350px;
+  padding: 20px;
+  background-color: #d19fe8;
+  border-radius: 10px;
+  border: 3px solid @border-color;
+  text-align: center;
+
+  h1 {
+    color: @text-color;
+    font-size: 24px;
+    text-shadow: 2px 2px 3px @border-color;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid @border-color;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+
+  .roles {
+    margin-top: 20px;
+
+    .role-option {
+      padding: 10px;
+      border-radius: 5px;
+      margin: 5px 0;
+      border: 1px dotted @border-color;
+
+      label {
+        display: block;
+        font-size: 16px;
+        color: @border-color;
+      }
+    }
+
+    /* Estilos para cada rol anidado */
+    .admin {
+      background-color: @admin-color;
+    }
+
+    .gerente {
+      background-color: @gerente-color;
+    }
+
+    .propietario {
+      background-color: @propietario-color;
+    }
+
+    .agente {
+      background-color: @agente-color;
+    }
+
+    .prospecto {
+      background-color: @prospecto-color;
+    }
+  }
+
+  button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #d19fe8;
+    border: 2px solid @border-color;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(#d19fe8, 10%);
+      color: @text-color;
+    }
+  }
+
+  .forgot-password {
+    margin-top: 10px;
+
+    a {
+      color: #666699;
+      font-size: 14px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+

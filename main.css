@@ -1,0 +1,82 @@
+/* Azul fuerte para Administrador */
+/* Verde brillante para Gerente */
+/* Naranja oscuro para Propietario */
+/* Rosa fuerte para Agente de ventas */
+/* Violeta oscuro para Prospecto */
+.container {
+  width: 350px;
+  padding: 20px;
+  background-color: #d19fe8;
+  border-radius: 10px;
+  border: 3px solid #333;
+  text-align: center;
+}
+.container h1 {
+  color: #fff;
+  font-size: 24px;
+  text-shadow: 2px 2px 3px #333;
+  margin-bottom: 10px;
+}
+.container input[type="text"],
+.container input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.container .roles {
+  margin-top: 20px;
+  /* Estilos para cada rol anidado */
+}
+.container .roles .role-option {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  border: 1px dotted #333;
+}
+.container .roles .role-option label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+}
+.container .roles .admin {
+  background-color: #1e90ff;
+}
+.container .roles .gerente {
+  background-color: #32cd32;
+}
+.container .roles .propietario {
+  background-color: #ff8c00;
+}
+.container .roles .agente {
+  background-color: #ff1493;
+}
+.container .roles .prospecto {
+  background-color: #9400d3;
+}
+.container button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #d19fe8;
+  border: 2px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container button:hover {
+  background-color: #bd76de;
+  color: #fff;
+}
+.container .forgot-password {
+  margin-top: 10px;
+}
+.container .forgot-password a {
+  color: #666699;
+  font-size: 14px;
+  text-decoration: none;
+}
+.container .forgot-password a:hover {
+  text-decoration: underline;
+}
